@@ -1,15 +1,19 @@
 
 <mat-toolbar color="primary">
-  <span>V-Cinema</span>
+  <span><i class="fa-solid fa-film"></i> Cinema</span>
   <span class="spacer"></span>
 
-  <a routerLink=""       mat-button routerLinkActive="active">Home</a>
-  <a routerLink="search" mat-button routerLinkActive="active">Search</a>
+  <a routerLink="/" mat-button>
+      <i class="fa-solid fa-house"></i> Home
+        </a>
+  <a routerLink="search" mat-button>
+    <i class="fa-solid fa-magnifying-glass"></i>Search</a>
 
   <!-- Ovo dodajemo sada: -->
   <a routerLink="login"    mat-button routerLinkActive="active">Login</a>
   <a routerLink="register" mat-button routerLinkActive="active">Register</a>
 
-  <a routerLink="cart"     mat-button routerLinkActive="active">Cart</a>
+  <a routerLink="cart"     mat-button >
+    <i class="fa-solid fa-cart-shopping"></i>Cart</a>
 </mat-toolbar>
 <router-outlet />

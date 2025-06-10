@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { MovieService } from '../../services/movie.service';
 import { JsonPipe, NgFor, NgIf } from '@angular/common';
 import { AxiosError } from 'axios';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-home',
-  imports: [JsonPipe,NgIf,NgFor],
+  imports: [JsonPipe,NgIf,NgFor,MatCardModule, MatButtonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
