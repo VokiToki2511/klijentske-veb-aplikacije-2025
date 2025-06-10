@@ -1,33 +1,33 @@
-/* Cela komponenta uvek centrirana u viewport-u */
+
 .auth-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-   /* svetlo siva pozadina cijele strane */
+   
 }
 
-/* Stil kartice */
+
 .login-card {
   width: 320px;
-  background-color: #424242; /* tamno siva pozadina kartice */
-  color: #fff;               /* bela boja teksta u kartici */
+  background-color: #424242; 
+  color: #fff;               
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
-  gap: 16px; /* razmak između title, polja i dugmeta */
+  gap: 16px; 
 }
 
-/* Naslov unutar kartice */
+
 .login-title {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-/* Form–field i dugme u full width */
+
 .full-width {
   width: 100%;
 }
