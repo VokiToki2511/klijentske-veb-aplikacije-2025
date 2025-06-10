@@ -1,0 +1,14 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* marginu između svakog dugmeta u toolbaru */
+mat-toolbar a[mat-button] {
+  margin-left: 8px;
+}
+
+/* stil za aktivni link */
+mat-toolbar a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
