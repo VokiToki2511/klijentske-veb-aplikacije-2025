@@ -3,28 +3,21 @@
     <p style="color: red">{{error}}</p>
 </div>
 
-<div *ngIf="movies">
-    <mat-card class="example-card" appearance="outlined">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
+<div *ngIf="movies" class="image-container" >
+    <mat-card class="example-card" appearance="outlined" *ngFor="let movie of movies" >
   <img mat-card-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
   <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
+    <h1> {{movie.title}}</h1>
+    <p> Vreme pocetka filma</p>
   </mat-card-content>
   <mat-card-actions>
     <button matButton>LIKE</button>
     <button matButton>SHARE</button>
   </mat-card-actions>
 </mat-card>
-    <p *ngFor="let movie of movies">{{movie.corporateId}}</p>
-     <pre> {{movies | json }}</pre> 
+
+    <!--<p *ngFor="let movie of movies">{{movie.corporateId}}</p>
+     <pre> {{movies | json }}</pre> -->
 </div>
 
 <div *ngIf="!movies && !error">
